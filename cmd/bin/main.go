@@ -1,9 +1,14 @@
 package main
 
 import (
-	"aoc2024/day3"
+	"aoc2024/day4"
+	"log"
 )
 
 func main() {
-	day3.Part2()
+	output, err := day4.Part1()
+	if err != nil {
+		log.Fatalln(err.Error())
+	}
+	log.Print(output)
 }
